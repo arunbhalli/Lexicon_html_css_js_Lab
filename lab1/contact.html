@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Contact Us</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <h1>Contact Us</h1>
-    <form>
-      <label>
-        First Name:
-        <input
-          name="name"
-          type="text"
-          class="feedback-input"
-          placeholder="First name"
-      /></label>
-      <br />
-      <label for="">
-        Second Name:
-        <input
-          name="Second name"
-          type="text"
-          class="feedback-input"
-          placeholder="Second name"
-        />
-      </label>
-      <br />
-      <input type="submit" value="SUBMIT" />
-    </form>
-  </body>
+
+<head>
+  <title>Contact Us</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="form.css" rel="stylesheet" />
+</head>
+
+<body>
+  <h1>Contact Us</h1>
+  <form class="form-1">
+    <span>
+      First Name:<input name="name" type="text" placeholder="First name" /></span>
+    <br />
+    <span>
+      Last Name:<input name="Last name" type="text" placeholder="Last name" /></span>
+
+    <br />
+    <span>Email:<input name="email" type="email" placeholder="Email" /></span>
+
+    <br />
+    <span >Town:
+      <select class="town">
+        <option value="1">Stockholm</option>
+        <option value="2">GÖteberg</option>
+        <option value="3">MalmÖ</option>
+      </select>
+    </span>
+    <input class="button" type="submit" value="Submit" />
+  </form>
+</body>
+
 </html>

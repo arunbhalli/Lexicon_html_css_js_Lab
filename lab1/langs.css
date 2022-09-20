@@ -1,0 +1,8 @@
+#lang {
+  border-radius: 10px;
+  width: 10%;
+  font-size: 24pt;
+  border: 1px #aaa;
+  background: #ccc;
+  padding: 10px;
+}
