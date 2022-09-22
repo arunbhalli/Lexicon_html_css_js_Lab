@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Beer Store</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="/lab3/style/order.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav>
+    <div class="topnav">
+      <a href="/lab3/Beer_store/index.html"><img src="/lab3/images/logo.png" /></a>
+      <a href="/lab3/Beer_store/index.html">Home</a>
+      <a href="/lab3/Beer_store/all-beers.html">See All Beers</a>
+      <a href="/lab3/Beer_store/order.html" class="active">Order a Beer</a>
+      <a href="/lab3/Beer_store/login.html" class="right">Login</a>
+      <a href="/lab3/Beer_store/register.html" class="right">Ragister</a>
+    </div>
+  </nav>
+  <main>
+    <center>
+      <h1>Order a beer</h1>
+      <hr>
+      <form>
+        <label>Brand</label>
+        <select>
+          <option selected disabled>Select a Brand</option>
+          <option>Corona Extra 330ml</option>
+          <option>Stella Artois 500ml</option>
+          <option>Carlberg 330ml</option>
+        </select>
+        <label>Quantity</label>
+        <input type="number" min="1" max="15" placeholder="Enter no of beers(1-15)">
+        <label>Destination</label>
+        <select>
+          <option selected disabled>select the city</option>
+          <option>Stockholm</option>
+          <option>Malmö</option>
+          <option>Göterberg</option>
+        </select>
+        <label>Enter your birth date</label>
+        <input type="date" id="birthday" name="birthday">
+
+        <label>
+          <p>Got an opinion, comment, recommendation? share it with us!</p>
+        </label>
+        <textarea placeholder="Enter your opinion here ..." style="height: 200px;">
+
+
+</textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </center>
+  </main>
+  <footer>
+    <hr />
+    <p><em>&copy; 2020 &ndash; Beer Store</em></p>
+  </footer>
+</body>
+
+</html>
