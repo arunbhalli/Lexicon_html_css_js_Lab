@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sum And Vat </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <script>
+    function sumandvat(price1, price2, price3) {
+      let sum = (price1 + price2 + price3);
+      let vat = (sum * 20) / 100;
+      let total = (sum + vat)
+      console.log(sum);
+      document.write('Here we are going check sum and Vat and Total bill', '<br>');
+      document.write('sum =  ', sum, '<br>');
+      document.write('VAT =  ', vat, '<br>');
+      document.write('Total =  ', total, '<br>');
+    }
+    sumandvat(2, 3, 4)
+  </script>
+</body>
+
+</html>
