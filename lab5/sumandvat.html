@@ -2,25 +2,30 @@
 <html lang="en">
 
 <head>
-  <title>Sum And Vat </title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <title>Sum And Vat</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
   <script>
-    function sumandvat(price1, price2, price3) {
-      let sum = (price1 + price2 + price3);
-      let vat = (sum * 20) / 100;
-      let total = (sum + vat)
+    let sum = parseFloat('0');
+    let vat = 0;
+    let total = 0;
+    document.write('Here is the answer', '<br>');
+    function sumAndVat(arr1) {
+      for (let index = 0; index < arr1.length; index++) {
+        sum += parseFloat(arr1[index]);
+        vat = (sum * 20) / 100;
+        total = sum + vat;
+      }
+      document.write('sum = ' + sum + '<br>');
+      document.write('VAT = ' + vat + '<br>');
+      document.write('total = ' + total + '<br>');
       console.log(sum);
-      document.write('Here we are going check sum and Vat and Total bill', '<br>');
-      document.write('sum =  ', sum, '<br>');
-      document.write('VAT =  ', vat, '<br>');
-      document.write('Total =  ', total, '<br>');
     }
-    sumandvat(2, 3, 4)
+    sumAndVat(['1', '2.2', 3]);
   </script>
 </body>
 

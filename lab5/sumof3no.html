@@ -9,13 +9,19 @@
 </head>
 
 <body>
+  <!--  Sum of Three digits -->
   <script>
-    function sumof3number(a, b, c) {
-      console.log(a + b + c)
-      document.write('Here we are going to add 3 numbers','<br>');
-      document.write(a + b + c)
+    let sum = parseFloat('0')
+    document.write('Here is the answer')
+    function sumOf3dig(arr1) {
+      for (let index = 0; index < arr1.length; index++) {
+        sum += parseFloat(arr1[index]);
+      }
+      document.write('<br>' + sum)
+      console.log(sum);
     }
-    sumof3number(2, 3, 4)
+    sumOf3dig(['1.1', ' 2', '3'])
   </script>
 </body>
+
 </html>
