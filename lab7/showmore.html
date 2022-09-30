@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Show more</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  Welcome to the "Show More Text Example".
+  <a href="#" id="demo" onclick="showText()" style="text-decoration:none">Read more ...</a>
+  <span id="text" style="display:none">Welcome to the JavaScript DOM</span>
+  <script>
+    function showText() {
+      let moreText = document.getElementById('text').textContent;
+      moreText = moreText.repeat(12)
+      document.getElementById("demo").textContent = moreText;
+      console.log(document.getElementById("demo").textContent)
+    }
+  </script>
+</body>
+
+</html>
