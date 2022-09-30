@@ -1,3 +1,7 @@
+
+
+
+
 function distance(arr) {
   let x1 = arr[0];
   let y1 = arr[1];
