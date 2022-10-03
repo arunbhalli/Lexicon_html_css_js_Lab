@@ -1,9 +1,16 @@
-$('#search-date1').keyup(function(){
-  var value = this.value.toLowerCase();
-  $('.modal_iterator_row').each(function(){
-    var id = $(this).text().toLowerCase();
-    $(this).toggle(id.indexOf(value) !== -1);
-    console.log($(this).toggle(id.indexOf(value) !== -1))
-  })
-
+$(document).ready(function () {
+  $('#searchText').keyup(function () {
+    var filter = $(this).val(),
+      count = 0;
+    $('#town li').filter(function () {
+      if ($(this).text().toLowerCase().search(new RegExp(filter, 'i'))) {
+      } else {
+        $(this).show();
+        $(this).css('font-weight', 'bold');
+        count++;
+      }
+    });
+    var numberItems = count;
+    $('#result-count').text('Number of Results = ' + count);
+  });
 });
