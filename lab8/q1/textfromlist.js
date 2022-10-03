@@ -4,7 +4,7 @@ $(document).ready(function () {
     let data = $('#items').text() + ',';
     let result = $('#result').text(data);
     console.log(result);
-    // console.log($('#result').text($('#items').text() + ','));
+    console.log($('#result').text($('#items').text() + ','));
     return;
   });
 });
