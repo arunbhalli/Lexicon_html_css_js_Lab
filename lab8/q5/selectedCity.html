@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Selected city</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    li {
+      display: inline-block;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    .selected {
+      background-color: #bbb;
+    }
+
+    ul {
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Towns</h2>
+  <ul id="items">
+    <li class="check1">Stockholm</li>
+    <li class="check2">Malmö</li>
+    <li class="check3">Umeå</li>
+    <li class="check4">Upsala</li>
+    <li class="check5">Uplands våsby</li>
+  </ul>
+  <button id="but1">Show Towns.</button>
+  <div id="selectedTowns"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="/lab8//q5/selectedCity.js"></script>
+</body>
+
+</html>
