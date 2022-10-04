@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>button</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    a.button {
+      border: 1px solid #ccc;
+      background-color: #EEE;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: #333;
+      text-decoration: none;
+      display: inline-block;
+      margin: 5px;
+    }
+
+    a.button.selected {
+      color: #111;
+      font-weight: bold;
+      border: 1px solid #aaa;
+      background-color: #bbb;
+    }
+
+    a.button.selected::before {
+      content: "\2713\20\20";
+    }
+
+    a:hover {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <a class="button" id="check1">Stockholm</a>
+    <a class="button" id="check2" href="#">Malmö</a>
+    <a class="button" id="check3">Göteberg</a>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="/lab8//q4/button.js"></script>
+</body>
+
+</html>
